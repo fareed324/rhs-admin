@@ -15,16 +15,19 @@
                         </ul>
                     </li>
 
-                    <li class="nav-label">Apps</li>
+                    <li class="nav-label">All List</li>
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="icon-envelope menu-icon"></i> <span class="nav-text">Email</span>
+                            <i class="icon-list menu-icon"></i> <span class="nav-text">List</span>
                         </a>
-                        <ul aria-expanded="false">
-                            <li><a href="./email-inbox.html">Inbox</a></li>
-                            <li><a href="./email-read.html">Read</a></li>
-                            <li><a href="./email-compose.html">Compose</a></li>
+                        @foreach (\App\Models\add_doctor::get() as $row)
+                        <ul>
+                            <li>
+                                <a href="{{ url('doctor',$row->id) }}"> {{ $row->name }}</a>
+                            </li>
                         </ul>
+                        @endforeach
+
                     </li>
 
                 </ul>

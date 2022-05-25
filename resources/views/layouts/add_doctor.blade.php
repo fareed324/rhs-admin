@@ -17,7 +17,7 @@
             </div>
             <!-- row -->
             @if (Session::has('message'))
-            <div class="alert alert-info">{{ Session::get('message') }}</div>
+            <div class="alert alert-success">{{ Session::get('message') }}</div>
          @endif
 
 
@@ -94,7 +94,6 @@
                                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal{{ $row->id }}" data-whatever="@mdo">Edit</button>
                                                     <a href="{{ url('delete',$row->id) }}" class="btn btn-danger btn-md" >Delete</a>
                                                 </td>
-
                                             </tr>
                                             @endforeach
 
@@ -135,14 +134,14 @@
                                 <label class="col-lg-4 col-form-label" for="name">Username <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
-                                    <input type="text" class="form-control" id="name" name="name" value="{{$row->name }}" placeholder="Enter  Name.." required>
+                                    <input type="text" class="form-control" name="name" value="{{$row->name }}" placeholder="Enter  Name.." required>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-lg-4 col-form-label" for="age">Age <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
-                                    <input type="text" class="form-control" id="age" name="age" value="{{$row->age }}" placeholder="Your Age.." required>
+                                    <input type="text" class="form-control"  name="age" value="{{$row->age }}" placeholder="Your Age.." required>
                                 </div>
                             </div>
 
@@ -150,7 +149,7 @@
                                 <label class="col-lg-4 col-form-label" for="desc">Description <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
-                                    <input type="text" class="form-control" id="age" name="age" value="{{$row->desc }}" placeholder="Your Age.." required>
+                                    <input type="text" class="form-control" name="desc" value="{{$row->desc }}" placeholder="Your Age.." required>
                                 </div>
                             </div>
                             <div class="modal-footer">

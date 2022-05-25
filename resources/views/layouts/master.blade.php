@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="{{asset('public/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css')}}">
     <!-- Custom Stylesheet -->
     <link href="{{asset('public/css/style.css')}}" rel="stylesheet">
-
-
+    <script src="{{asset('public/js/jquery-3.6.0.min.js')}}"></script>
+    <script src="{{asset('public/js/jquery.print.js')}}"></script>
 </head>
 
 <body>
@@ -46,72 +46,7 @@
 
        @yield("content")
 
-       <div class="content-body">
 
-        <div class="container-fluid mt-3">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="card gradient-1">
-                        <div class="card-body">
-                            <h3 class="card-title text-white">Products Sold</h3>
-                            <div class="d-inline-block">
-                                <h2 class="text-white">4565</h2>
-                                <p class="text-white mb-0">Jan - March 2019</p>
-                            </div>
-                            <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="card gradient-2">
-                        <div class="card-body">
-                            <h3 class="card-title text-white">Net Profit</h3>
-                            <div class="d-inline-block">
-                                <h2 class="text-white">$ 8541</h2>
-                                <p class="text-white mb-0">Jan - March 2019</p>
-                            </div>
-                            <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="card gradient-3">
-                        <div class="card-body">
-                            <h3 class="card-title text-white">New Customers</h3>
-                            <div class="d-inline-block">
-                                <h2 class="text-white">4565</h2>
-                                <p class="text-white mb-0">Jan - March 2019</p>
-                            </div>
-                            <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="card gradient-4">
-                        <div class="card-body">
-                            <h3 class="card-title text-white">Customer Satisfaction</h3>
-                            <div class="d-inline-block">
-                                <h2 class="text-white">99%</h2>
-                                <p class="text-white mb-0">Jan - March 2019</p>
-                            </div>
-                            <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div></div>
-        <!--**********************************
-            Footer start
-        ***********************************-->
-        <div class="footer">
-            <div class="copyright">
-                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
-            </div>
-        </div>
-        <!--**********************************
-            Footer end
-        ***********************************-->
-    </div>
     <!--**********************************
         Main wrapper end
     ***********************************-->
@@ -123,6 +58,8 @@
     <script src="{{asset('public/js/custom.min.js')}}"></script>
     <script src="{{asset('public/js/settings.js')}}"></script>
     <script src="{{asset('public/js/gleek.js')}}"></script>
+    <script src="{{asset('public/js/jquery-3.6.0.min.js')}}"></script>
+    <script src="{{asset('public/js/jquery.print.js')}}"></script>
     <script src="{{asset('public/js/styleSwitcher.js')}}"></script>
 
     <!-- Chartjs -->

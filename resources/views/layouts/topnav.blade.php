@@ -15,7 +15,7 @@
     ********************-->
 <div class="nav-header">
     <div class="brand-logo">
-        <a href="{{ url ('master') }}">
+        <a href="{{ url ('dashboard') }}">
             <b class="logo-abbr"><img src="{{asset('public/images/avatar/1.jpg')}}"> </b>
             <span class="logo-compact"><img src="{{asset('public/images/logo-compact.png')}}"></span>
             <span class="brand-title">
